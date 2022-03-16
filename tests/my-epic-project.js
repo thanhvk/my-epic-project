@@ -4,8 +4,7 @@ const main = async() => {
   console.log("🚀 Starting test...")
 
   anchor.setProvider(anchor.Provider.env());
-  console.log(anchor.workspace, "=============================");
-  const program = anchor.workspace.my-epic-project;
+  const program = anchor.workspace.MyEpicProject;
   const tx = await program.rpc.startStuffOff();
 
   console.log("📝 Your transaction signature", tx);
